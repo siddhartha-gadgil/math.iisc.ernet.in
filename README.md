@@ -1,2 +1,2 @@
-# math.iisc.ernet.in
+# www.math.iisc.ernet.in
 Sources for the Mathematics department, IISc web pages.
