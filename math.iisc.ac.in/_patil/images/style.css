@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	background-image:url(bg_body.png);
+	background-repeat:repeat-x;
+	}
+	
+a.menu {font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#ffffff;
+	font-weight:bold;
+	text-decoration:none;
+	}
+	
+a.menu:hover {font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color: #ffc000;
+	font-weight:bold;
+	text-decoration:underline;
+	
+	}
+.programs_link {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#598dc6
+	}
+	
+.programs_link:hover {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFFFFF;
+}	
+
+a.link_all {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: #0000FF;
+	text-decoration:none;
+
+}
+
+a.link_all:hover {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: #fa7204;
+	text-decoration:none;
+
+}

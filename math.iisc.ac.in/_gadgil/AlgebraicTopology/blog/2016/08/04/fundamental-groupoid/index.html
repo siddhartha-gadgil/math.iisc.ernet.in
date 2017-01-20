@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<!-- Mirrored from math.iisc.ac.in/~gadgil/AlgebraicTopology/blog/2016/08/04/fundamental-groupoid/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Jan 2017 05:40:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <title>Fundamental Groupoid - Algebraic Topology</title>
+  <meta name="author" content="Siddhartha Gadgil">
+
+  
+  <meta name="description" content="As mentioned earlier, in algebraic topology we associated to spaces algebraic objects. The first half of this course will be focused on one such - &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="index.html">
+  <link href="../../../../../favicon.png" rel="icon">
+  <link href="../../../../../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="../../../../../../../atom.html" rel="alternate" title="Algebraic Topology" type="application/atom+xml">
+  <script src="../../../../../javascripts/modernizr-2.0.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="../../../../../javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="../../../../../index.html">Algebraic Topology</a></h1>
+  
+    <h2>Department of Mathematics, Indian Institute of Science, Aug-Dec 2016.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="../../../../../../../atom.html" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:math.iisc.ac.in/~gadgil/AlgebraicTopology" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+	<li><a href="../../../../../home/index.html">Home</a></li>
+  <li><a href="../../../../../index.html">Blog</a></li>
+  <li><a href="../../../../archives/index.html">Archives</a></li>
+	<li><a href="../../../../categories/assignments/index.html">Assignments</a></li>
+	<li><a href="../../../../categories/announcements/index.html">Announcements</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Fundamental Groupoid</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-08-04T11:23:15+05:30" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>As mentioned earlier, in algebraic topology we associated to spaces algebraic objects. The first half of this course will be focused on one such - the <em>fundamental group</em>.</p>
+
+<p>We shall first construct the so called <em>fundamental groupoid</em>, so that lemmas can be proved in the generality we need. A groupoid is like a group, except that not all pairs of elements can be multiplied. A typical example is the set of invertible linear maps between subspaces of a vector space $V$, with composition as the multiplication - this is defined in the case of the codomain of the second map coinciding with the domain of the first. There are identities corresponding to each subspace, and each element is invertible in an appropriate sense.</p>
+
+<p>The construction of the fundamental groupoid is in two steps. We first define a multiplication on the space of paths of a space. We then define an equivalence relation on this space, so that the multiplication makes the quotient into a groupoid.</p>
+
+<h3 id="paths-and-multiplication">Paths and Multiplication</h3>
+
+<p>Fix a topological space $X$. For points $a,b\in X$, let $\Omega(X; a, b)$ be the set of paths from $a$ to $b$, i.e.,
+<script type="math/tex">\Omega(X; a,b) = \{\alpha: [0,1] \to X : \text{$\alpha$ continuous}, \alpha(0)=a, \alpha(1) = b\}.</script></p>
+
+<p>For $a, b, c\in X$, we have a multiplication from $\Omega(a, b)\times \Omega(b,c)\to \Omega(a,c)$ which corresponds to a path from $a$ to $b$ followed by a path from $b$ to $c$ (precise formulas will be given in the lectures).</p>
+
+<p>Let $\Omega(X)$ be the union of the sets $\Omega(X; a,b)$. We then get a partially defined product $*$ on this from the above products. Note that this is not associative and there are no identity elements or inverses.</p>
+
+<h3 id="homotopy-between-paths-and-the-groupoid-structure">Homotopy between paths and the Groupoid structure</h3>
+
+<p>A crucial idea is to regard paths as equivalent if one can be deformed to the other fixing end points. This gives an equivalence relation, where the deformation is called a <em>path homotopy</em>, or simply a homotopy. Formally a path homotopy is a map $H : [0,1] \times [0,1] \to X$. For paths $\alpha$ and $\beta$, we denote path homotopy by $\alpha\sim \beta$.</p>
+
+<p>Let $\pi(X)$ denote the quotient of $\Omega(X)$ by the equivalence relation given by path homotopy, with $\pi(X, a,b)$ as obvious. Then the product on $\Omega(X)$ induces one on $\pi(X)$. Moreover, we see that this product is associative.</p>
+
+<p>Furthermore, if $e_a$ denotes the constant path at $a$, then if $\alpha$ is a path from $a$ to $b$, we have $e_a * \alpha \sim \alpha$ and $\alpha * e_b \sim \alpha$. Finally, if $\bar\alpha : t \mapsto \alpha(1-t)$, then $\alpha * \bar\alpha \sim e_a$ and $\bar\alpha * \alpha \sim e_a$. This means that $*$ makes $\pi(X)$ into a groupoid.</p>
+
+<h3 id="fundamental-group">Fundamental group</h3>
+
+<p>Now pick a basepoint $x\in X$. We define the fundamental group of $X$ with basepoint $x$ to be $\pi_1(X, x)= \pi(X; x, x)$. It is straightforward to see that the groupoid structure on $\pi(X)$ makes $\pi_1(X, x)$ into a group.</p>
+
+<h3 id="change-of-basepoint">Change of basepoint</h3>
+
+<p>Suppose we choose a different basepoint $x’$ for the space $X$, then if there is a path $\alpha$ from $x$ to $x’$, we see that the $\pi_1(X, x)$ and $\pi_1(X, x’)$ are isomorphic. Namely, we use the groupoid multiplication to construct a function $ \beta\mapsto\alpha * \beta * \bar\alpha$ from $\pi_1(X, x’)$ to $\pi_1(X, x)$. Replacing $\alpha$ by $\bar\alpha$ gives a function in the opposite direction. Finally the groupoid properties show that these are inverses of each other.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Siddhartha Gadgil</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-08-04T11:23:15+05:30" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='../../../../categories/notes/index.html'>notes</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://math.iisc.ac.in/~gadgil/AlgebraicTopology/blog/2016/08/04/fundamental-groupoid/" data-via="" data-counturl="http://math.iisc.ac.in/~gadgil/AlgebraicTopology/blog/2016/08/04/fundamental-groupoid/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="../../../07/21/topology-problems/index.html" title="Previous Post: topological problems">&laquo; topological problems</a>
+      
+      
+        <a class="basic-alignment right" href="../../05/assignment-homotopy-as-path-of-paths/index.html" title="Next Post: Assignment 1: Homotopy as path of paths">Assignment 1: Homotopy as path of paths &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="../../05/assignment-homotopy-as-path-of-paths/index.html">Assignment 1: Homotopy as Path of Paths</a>
+      </li>
+    
+      <li class="post">
+        <a href="index.html">Fundamental Groupoid</a>
+      </li>
+    
+      <li class="post">
+        <a href="../../../07/21/topology-problems/index.html">Topological Problems</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Siddhartha Gadgil -
+  <span class="credit">Powered by <a href="http://octopress.org/">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+
+<!-- Mirrored from math.iisc.ac.in/~gadgil/AlgebraicTopology/blog/2016/08/04/fundamental-groupoid/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Jan 2017 05:40:27 GMT -->
+</html>

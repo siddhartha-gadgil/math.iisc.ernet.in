@@ -1,0 +1,742 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<!-- Mirrored from math.iisc.ac.in/~gadgil/BasicAnalysis/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Jan 2017 05:55:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <title>UM 202: Introduction to Basic Analysis</title>
+  <meta name="author" content="Siddhartha Gadgil">
+
+  
+  <meta name="description" content="Let $\{x_n\}$ be a bounded sequence. Recall that a limit point of $\{x_n\}$ is the limit of some subsequence $\{x_{n_k}\}$ of $\{x_n\}$. Show that if &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://math.iisc.ernet.in/~gadgil/BasicAnalysis/">
+  <link rel = "icon" href="iisclogo.jpg">
+  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="javascripts/modernizr-2.0.js"></script>
+  <script src="javascripts/ender.js"></script>
+  <script src="javascripts/octopress.js" type="text/javascript"></script>
+  <link href="../../atom.html" rel="alternate" title="UM 202: Introduction to Basic Analysis" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="index.html">UM 202: Introduction to Basic Analysis</a></h1>
+  
+    <h2>Department of Mathematics, Indian Institute of Science, Jan-Apr 2016.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="../../atom.html" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:math.iisc.ernet.in/~gadgil/BasicAnalysis" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+	<li><a href="home/index.html">Home</a></li>
+  <li><a href="index.html">Blog</a></li>
+  <li><a href="blog/archives/index.html">Archives</a></li>
+	<li><a href="blog/categories/assignments/index.html">Assignments</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="blog/2016/03/08/assignment-4/index.html">Assignment 4 (Due March 15, 2016)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-03-08T08:59:32+05:30" pubdate data-updated="true">Mar 8<sup>th</sup>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Let $\{x_n\}$ be a <strong>bounded</strong> sequence. Recall that a <em>limit point</em> of $\{x_n\}$ is the limit of some subsequence $\{x_{n_k}\}$ of $\{x_n\}$.</p>
+
+<ol>
+  <li>Show that if the sequence $\{x_n\}$ converges to $l\in\mathbb{R}$, every subsequence of $\{x_n\}$ also converges to $l$.</li>
+  <li>Show that the following are equivalent.
+    <ul>
+      <li><strong>(a)</strong> $\{x_n\}$ is convergent.</li>
+      <li><strong>(b)</strong> $\limsup x_n = \liminf x_n$.</li>
+      <li><strong>(c)</strong> $\{x_n\}$ has a unique limit point.</li>
+    </ul>
+  </li>
+  <li>Let $L$ be the  set of limit points of ${x_n}$. Show that $\limsup x_n = \sup L$ and $\liminf x_n = \inf L$.  </li>
+</ol>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="blog/2016/02/02/assignment-3-quotients/index.html">Assignment 3 - Quotients (Due Tuesday, February 9, 2016)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-02-02T09:15:48+05:30" pubdate data-updated="true">Feb 2<sup>nd</sup>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2 id="quotients-of-sets">Quotients of sets.</h2>
+
+<p>Let $A$ be a set and let $\sim\subset A \times A$. We call $\sim$ a binary relation and write $a \sim b$ for $(a, b)\in \sim$.
+A subset $S\subset A$ is said to be <em>closed under $\sim$</em> if whenever $x\sim y$ and one of $x$ and $y$ is in $S$, so is the other.</p>
+
+<ol>
+  <li>For $a\in A$, show that there is a (unique) set $[a]\subset A$ such that
+    <ul>
+      <li>$a$ is closed under $\sim$</li>
+      <li>if $S$ is closed under $\sim$ and $a\in S$  then $[a]\subset S$</li>
+    </ul>
+  </li>
+  <li>Show that for $x\in A$, $x\in [a]$ if and only if $[x]=[a]$.</li>
+  <li>Conclude that
+$\bar{A} = \{S \subset A: \text{$S = [a]$ for some $a\in A$}\}$
+is a collection of disjoint sets whose union is $A$.</li>
+  <li>Define the map $q: A\to \bar{A}$ by $q(a) = [a]$. Let $B$ be a set and $f: A \to B$ be  a function. Show that the following are equivalent.
+    <ul>
+      <li>for all $a, b \in A$, $a\sim b \implies f(a) = f(b)$</li>
+      <li>there is a function $\bar{f} : \bar{A} \to B$ such that $\bar{f} \circ q = f$</li>
+    </ul>
+  </li>
+</ol>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="blog/2016/01/22/assignment-2/index.html">Assignment 2 (Due Friday, February 5, 2016)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-01-22T08:45:18+05:30" pubdate data-updated="true">Jan 22<sup>nd</sup>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ol>
+  <li>Write down a formula expressing the statement that the set $S$ is a singleton (i.e., $S$ has exactly one element).</li>
+  <li>Write down a formula expressing the statement that the set $S$ contains $x$ and $y$ but no other elements.</li>
+  <li>Using the axiom of extensionality, show that there is a unique set $S$ that  contains $x$ and $y$ but no other elements.</li>
+  <li>Prove Proposition 3.1.28 from the text (Analysis I by Terence Tao).</li>
+</ol>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="blog/2016/01/14/e-mail-submissions/index.html">E-mail Submissions</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-01-14T14:14:32+05:30" pubdate data-updated="true">Jan 14<sup>th</sup>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Assignments can be submitted either handwritten on paper or by e-mail using latex. For e-mail submissions please submit a pdf file with <strong>um202</strong> as a word in the subject.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="blog/2016/01/12/starting-latex/index.html">Starting LaTeX</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-01-12T10:08:24+05:30" pubdate data-updated="true">Jan 12<sup>th</sup>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>For those of you who want to start using latex (for example to submit assignments), there are two good cloud based latex editors <a href="https://www.overleaf.com/">Overleaf</a> and <a href="https://www.sharelatex.com/">ShareLatex</a>, both with latex documentation (and adequate free plans).</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="blog/2016/01/08/assignment-1/index.html">Assignment 1(due Tuesday, January 19, 2016)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-01-08T09:54:39+05:30" pubdate data-updated="true">Jan 8<sup>th</sup>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The following problems are from Terence Tao: Analysis I.</p>
+
+<ol>
+  <li>Exercise 2.2.1</li>
+  <li>Exercise 2.2.2</li>
+  <li>Exercise 2.2.3</li>
+  <li>Exercise 2.2.5</li>
+  <li>Exercise 2.2.6</li>
+</ol>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="blog/2016/01/08/natural-numbers-axioms/index.html">Natural Numbers - Axioms, Addition, Recursion</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-01-08T09:54:13+05:30" pubdate data-updated="true">Jan 8<sup>th</sup>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We see, following the <strong>text</strong> how to axiomatize the natural numbers and define addition and multiplication from these. We elaborate on only one result, namely one allowing us to make recursive definitions.</p>
+
+<p><strong>Theorem:</strong> Let $X$ be a set, let $x_0\in X$ and let $g(n, x)$ be a function $g: \mathbb{N} \times X \to X$. There is a unique function $f: \mathbb{N}\to X$ such that $f(0)= x_0$ and $\forall n \in\mathbb{N}\ f(n++) = g(n, f(n))$.</p>
+
+<p><strong>Proof:</strong> The idea is to construct the graph of $f$ as the smallest set containing a specified starting point and closed under a shift.</p>
+
+<p>Let $\mathcal{U} = \{S \subset \mathbb{N}\times X : (0, x_0)\in S,\ (n, x)\in S\Rightarrow (n++, g(n++, x))\in S\}$. Note that $\mathcal{U}$ is non-empty as $\mathbb{N}\times X \in \mathcal{U}$.</p>
+
+<p>Consider the set</p>
+
+<script type="math/tex; mode=display">S_0 = \bigcap\limits_{S \in \mathcal{U}} S</script>
+
+<p>It is easy to see that $S_0\in \mathcal{U}$.</p>
+
+<p><strong>Lemma:</strong> For every $n\in \mathbb{N}$, there exist a unique $x_n\in X$ such that $(n, x_n) \in S_0$.</p>
+
+<p><strong>Proof:</strong> We prove this by induction on $n$. First, let $n=0$. Note that $(0, x_0)\in S$ for all $S\in \mathcal{U}$, and so $(0, x_0) \in S_0$. Now suppose $(0, x_0’)\in S_0$ with $x_0’\neq x_0$. Let $S = \{(n, x) \in S_0: (n, x) \neq (0, x_0’)$. We claim that $S\in \mathcal{U}$.</p>
+
+<p>Firstly, as $(0, x_0) \in S_0$ and $x_0’ \neq x_0$, $(0, x_0)\in S$. Next, suppose $(n, x)\in S \subset S_0$, then  $(n++, g(n++, x))\in S_0$. Further, as $n++ \neq 0$, we see that $(n++, g(n++, x)) \neq (0, x_0’)$. Hence $(n++, g(n++, x))\in S$. Thus $S\in \mathcal{U}$.</p>
+
+<p>By definition of $S_0$, as $S\in \mathcal{U}$, $S_0 \subset S$. But $(0, x_0’)$ is in $S_0$ but not $S$, a contradiction. This shows that $x_0\in X$ is the unique point $x \in X$ such that $(0, x)\in S_0$.</p>
+
+<p>The induction step is similar. Assume $(n, x_n)\in S_0$ and this is unique, i.e., $(n, x)\in S_0 \implies x = x_n$. Then $(n, x_n)\in S$ for all $S \in \mathcal{U}$, from which we deduce that $(n++, g(n++, x))\in S_0$. To show uniqueness, suppose $x_{n++}’\in X$ is a point with $(n++, x_{n++}’)\in S_0$ but $x_{n++}’ \neq x_{n++} := g(n++, x)$. Let $S = S_0 \setminus \{(n++, x_{n++}’)\}$. We again show that $S \in \mathcal{U}$ and obtain a contradiction to $S_0 \subset S$.</p>
+
+<p>Namely, as $(0, x_0) \in S_0$ and $n++ \neq 0$, $(0, x_0)\in S$. Next, suppose $(m, x)\in S \subset S_0$, then  $(m++, g(m++, x))\in S_0$. If $(m++, g(m++, x)) \notin S$, then we must have $(m++, g(m++, x)) = (n++, x_{n++}’)$. Hence $n = m$, so $x = x_n$. It follows that $x_{n++}’ = g(m++, x) = g(n++, x_n)$, a contradiction. Thus, if $(m, x)\in S$, $(m++, g(m++, x)) \in S$, completing the proof that $S\subset \mathcal{U}$, and contradicting $S_0 \subset S$.</p>
+
+<p>This completes the proof of the lemma.</p>
+
+<script type="math/tex; mode=display">\tag*{$\square$}</script>
+
+<p>To prove the theorem, we define the function $f$ by $f(n) = x_n$. As we will see, in terms of set theory the function just corresponds to the set $S_0$. It is straightforward to show by induction than $f$ indeed has the desired properties, and is the unique such function.</p>
+
+<script type="math/tex; mode=display">\tag*{$\square$}</script>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="blog/2016/01/07/formal-languages/index.html">Formal Languages</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-01-07T09:51:26+05:30" pubdate data-updated="true">Jan 7<sup>th</sup>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Just like a Dictionary, which can define words only in terms of other words, foundations of mathematics <em>cannot</em> be fully self-contained, but <em>must</em> make reference to the external world. This is done through <em>rules</em> governing the foundations. However, what we can, and do, insist on is that the collection of rules is small and clean, so that</p>
+
+<ul>
+  <li>they can be communicated to at least all scientifically literate people, who will all interpret them the same way.</li>
+  <li>they can be machine implemented, and we can be convinced that the machine implementation of the rules coincides with our understanding of them.</li>
+</ul>
+
+<p>Such rules are generally specified in terms of a <em>Formal Grammar</em>.</p>
+
+<h3 id="formal-grammars">Formal Grammars</h3>
+
+<p>A formal grammar has an alphabet $\mathcal{A}$ (mathematically a set), whose elements are letters. This may be finite or infinite, but in the latter case we must have agreement (as above) on what are the letters. Further, these letters can be divided into classes (e.g. variables, constants, paranthesis). We should be able to agree upon and determine when a letter belongs to a given class.</p>
+
+<p>An <em>expression</em> is a finite sequence of letters. We can <em>concatenate</em> two expressions, i.e., write one after the other. In a formal language,</p>
+
+<ul>
+  <li>we define certain distinguished classes of expressions (e.g. Terms, Formulas) by specifying how these can be built by (non-trivial) concatenation from
+    <ul>
+      <li>letters in a specific class,</li>
+      <li>specific letters,</li>
+      <li>words in appropriate distinguished classes, including in general the class being defined.</li>
+    </ul>
+  </li>
+  <li>as words from which a given word is built must be shorter, we can determine when a word belongs to a distinguished class.</li>
+  <li>we can more generally <em>pattern match</em> on one or more words: for example, given two words, we can determine whether
+<strong>the two words are of the form $P$ and $P \implies Q$ where $P$ and $Q$ are formulas.</strong></li>
+</ul>
+
+<h3 id="syntactic-foundations-of-mathematics-first-order-logic-and-set-theory">Syntactic foundations of mathematics: First-order logic and Set theory.</h3>
+
+<p>As sketched earlier, we can define first-order languages in a formal grammar, with two distinguished classes of expressions - terms and formulas. A theory consists of a first order language together with a collection of formulas, which we call the <em>Axioms</em> of the theory. Typically, we insist that these include a set of <em>logical axioms</em>.</p>
+
+<p>Rules of deduction (inference), i.e., rules telling us how to deduce formulas from other formulas, can be described in terms of pattern matching and concatenation as above. Mathematics has foundations the language and axioms of <em>Set Theory</em>. In principle, any mathematical theorem can be written in this language, and a proof can be written as a sequence of applications of the rules of deduction starting with the axioms of set theory and the logical axioms.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="blog/2016/01/04/natural-numbers-first-order-logic/index.html">Natural Numbers- First Order Logic</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-01-04T17:04:08+05:30" pubdate data-updated="true">Jan 4<sup>th</sup>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We begin by taking a deeper look at the foundations of natural numbers and their arithmetic. Generally students see the formalization of mathematics, in a tradition going back to Euclid, as beginning with <em>axioms</em> or <em>definitions</em>. So for instance, one of the axioms concerning the natural numbers can be:</p>
+
+<script type="math/tex; mode=display">\forall n\ 0 + n = n.</script>
+
+<p>Theorems are the logical consequences of the axioms.</p>
+
+<p>But, for the axiomatic approach to make sense, we first need certain <em>rules</em>. These are purely syntactic in nature.</p>
+
+<h3 id="language">Language:</h3>
+<p>Suppose we want to create an alien version of the natural numbers. We could remove some axioms and add new ones. However, we cannot have <em>axioms</em> such as:</p>
+
+<script type="math/tex; mode=display">\forall n\  0 + n - = \exists \forall.</script>
+
+<script type="math/tex; mode=display">3 + (4 - n).</script>
+
+<p>Indeed the first is nonsense - it is not a valid mathematical expression. The second is a mathematical expression, but represents a natural number, not an expression that can be true or false. Thus, we need rules for specifying what are
+valid mathematical expressions, and also which of these represent <em>formulas</em>, i.e., which can be true or false.</p>
+
+<h3 id="rules-of-inference">Rules of inference:</h3>
+
+<p>Once we know what are valid formulas, we can declare some of them to be our axioms, i.e., we declare that they are true. The rules of inference tell us what formulas we can deduce as consequences of others. Thus theorems are consequences of the axioms.</p>
+
+<h1 id="first-order-logic">First-Order Logic:</h1>
+
+<p>The logic that underlies the usual foundations of mathematics is called <em>Predicate Calculus</em> or first-order logic. The natural numbers can be represented in first-order logic, as we see briefly below. However, the usual way of viewing natural numbers, and everything else, in mathematics is to describe <strong>Sets</strong> in first order logic and then view natural numbers as corresponding to certain sets.</p>
+
+<h2 id="first-order-languages">First-order languages</h2>
+
+<p>We have to first describe valid mathematical expressions. In first order logic, these are of two kinds, <em>Terms</em> and <em>Formulas</em>. Terms represent elements in a fixed <em>domain of discourse</em>, such as natural numbers or the collection of all sets, while formulas can be true or false. Both terms and formulas may depend on some variables.</p>
+
+<p>More precisely,</p>
+
+<ul>
+  <li>a first-order language is determined by collections of
+    <ul>
+      <li>constants</li>
+      <li>variables (we can assume the variables to always be, say, $x_1$, $x_2$, $x_3$, …)</li>
+      <li>functions - with a specified degree for each function.</li>
+      <li>predicates (relations) - with a specified degree for each predicate.</li>
+    </ul>
+  </li>
+  <li>Terms are expressions that can be built recursively by:
+    <ul>
+      <li>constants and variables are terms.</li>
+      <li>if $f(x_1, \dots, x_n)$ is a function of degree $n$ and $t_1$, …, $t_n$ are terms then $f(t_1, \dots, t_n)$ is a term.</li>
+    </ul>
+  </li>
+  <li>Formulas are expressions that can be built recursively by:
+    <ul>
+      <li>if $p(x_1, \dots, x_n)$ is a predicate of degree $n$ and $t_1$, …, $t_n$ are terms then $p(t_1, \dots, t_n)$ is a formula.</li>
+      <li>If $P$ and $Q$ are formulas, so are $P\wedge Q$, $P \vee Q$, $P \implies Q$, $P\iff Q$ and $\neg P$.</li>
+      <li>If $P$ is a formula and $x$ is a variable, then $\forall x P$ and $\exists x P$ are formulas.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="rules-of-inference-1">Rules of inference</h2>
+
+<p>Some of the most important rules of inference are as below.</p>
+
+<h3 id="tautologies">Tautologies</h3>
+<p>Tautologies are formulas built from formula variables $P$, $Q$ etc. (i.e., $P$ , $Q$ are variables representing formulas) which are true for all <em>truth values</em> of the variables. For instance, the statement <em>“P or (not P)”</em> is true if $P$ is true and also if $P$ is false. Similarly, we have the tautology $P \implies (Q \implies P)$.</p>
+
+<p>We can deduce (without any axioms) that any formula obtained by substituting formulas for the formula variables in a tautology is true.</p>
+
+<h3 id="modus-ponens">Modus Ponens</h3>
+
+<p>The main rule of inference, going back to antiquity, is Modus Ponens: given $P$ and $P \implies Q$, we can deduce $Q$.</p>
+
+<h2 id="natural-numbers-in-first-order-logic">Natural numbers in first-order logic</h2>
+
+<p>The natural numbers can be described in first-order logic.</p>
+
+<ul>
+  <li>The language of natural numbers has
+    <ul>
+      <li>a single constant $0$.</li>
+      <li>a function $S$ (successor) of degree $1$ and functions $+$, $\cdot$ of degree $2$.</li>
+      <li>a predicate $=$ of degree $2$</li>
+    </ul>
+  </li>
+  <li>Equality is often taken as part of the logic, so in first-order logic with equality, we are assumed to have a predicate $=$ and some axioms
+    <ul>
+      <li>$\forall x\ x = x$</li>
+      <li>$\forall x\forall y\ x = y \implies y = x$</li>
+      <li>$\forall x \forall y\forall z\ (x = y)\wedge (y = z) \implies x = z$</li>
+    </ul>
+  </li>
+  <li>The Peano axioms for natural numbers in first-order logic are
+    <ul>
+      <li>$\forall x\ 0 \neq S(x)$</li>
+      <li>$\forall x,y\ S(x) = S(y) \implies x = y$</li>
+      <li>$\forall x\in \mathbb{N}  x + 0 = x$</li>
+      <li>$\forall x,y\in \mathbb{N}  x + S(y) = S(x + y)$</li>
+      <li>$\forall x\in \mathbb{N}  x \cdot 0 = 0$</li>
+      <li>$\forall x,y\in \mathbb{N}  x \cdot S(y) = x \cdot y + x$</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="natural-numbers-as-sets">Natural numbers as sets</h2>
+
+<p>We will not pursue in detail the first-order theory of natural numbers, but instead view them as sets. Thus, each natural number is a set, and the set of natural numbers is a set whose elements are sets. Formally, sets are defined as a first-order theory.</p>
+
+<p>The details of axiomatizing natural numbers (as sets), as the details of most of  this course, are in Terence Tao’s books Analysis I &amp; II.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="blog/2015/12/22/welcome-to-basic-analysis/index.html">Welcome to Basic Analysis</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-12-22T08:44:43+05:30" pubdate data-updated="true">Dec 22<sup>nd</sup>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This course is a basic introduction to Analysis and related foundations of Mathematics, going beyond and deeper than the first year courses. We will follow Terence Tao’s books Analysis I and (part of) Analysis II. However, the background assumed in those books is less than the first year courses at I.I.Sc., so some parts will be covered rapidly or the treatment in the course will be at a more sophisticated level.</p>
+
+<p>A brief outline of material covered, and occasionally more detailed notes, will be posted in this blog.
+For timings, syllabus etc please visit the <a href="home/index.html">home page</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="blog/archives/index.html">Blog Archives</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="blog/2016/03/08/assignment-4/index.html">Assignment 4 (due March 15, 2016)</a>
+      </li>
+    
+      <li class="post">
+        <a href="blog/2016/02/02/assignment-3-quotients/index.html">Assignment 3 - Quotients (due Tuesday, February 9, 2016)</a>
+      </li>
+    
+      <li class="post">
+        <a href="blog/2016/01/22/assignment-2/index.html">Assignment 2 (due Friday, February 5, 2016)</a>
+      </li>
+    
+      <li class="post">
+        <a href="blog/2016/01/14/e-mail-submissions/index.html">e-mail submissions</a>
+      </li>
+    
+      <li class="post">
+        <a href="blog/2016/01/12/starting-latex/index.html">Starting LaTeX</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Siddhartha Gadgil -
+  <span class="credit">Powered by <a href="http://octopress.org/">Octopress</a>. Design by <a href="http://octopressthemes.com/">Octopress Themes</a>.</span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+
+<!-- Mirrored from math.iisc.ac.in/~gadgil/BasicAnalysis/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Jan 2017 05:55:41 GMT -->
+</html>

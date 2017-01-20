@@ -1,0 +1,68 @@
+HTTrack3.48-21 launched on Fri, 20 Jan 2017 10:22:06 at http://math.iisc.ac.in/
+(httrack http://math.iisc.ac.in/ -O . )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:22:07	Warning: 	Cache: damaged cache, trying to repair
+10:22:07	Warning: 	Cache: 648059 bytes successfully recovered in 511 entries
+10:22:16	Error: 	"Not Found" (404) at link math.iisc.ac.in/image/lnk-events.gif (from math.iisc.ac.in/)
+10:22:20	Warning: 	Found for math.iisc.ac.in/webmail/
+10:22:20	Warning: 	File has moved from math.iisc.ac.in/webmail/ to src/login.php
+10:22:42	Error: 	"Not Found" (404) at link math.iisc.ac.in/courses.htm (from math.iisc.ac.in/funding_agen.htm)
+10:22:46	Warning: 	Link math.iisc.ac.in/webmail/src/login.php not scanned (follow robots meta tag)
+10:23:39	Error: 	"Not Found" (404) at link math.iisc.ac.in/style/chalukyas.css (from math.iisc.ac.in/scrollnews.html)
+10:23:39	Error: 	"Not Found" (404) at link math.iisc.ac.in/downloads/outing-spots.pdf (from math.iisc.ac.in/scrollnews.html)
+10:32:59	Error: 	"Not Found" (404) at link math.iisc.ac.in/~nmi/images/lnk-thematicprog2.jpg (from math.iisc.ac.in/~nmi/)
+10:33:07	Warning: 	engine: warning: temporary file ./math.iisc.ac.in/_nmi/otherevents-seminars-past.html.tmp already exists
+10:33:48	Warning: 	engine: warning: temporary file ./math.iisc.ac.in/_nmi/default.html.tmp already exists
+10:37:06	Error: 	"Not Found" (404) at link math.iisc.ac.in/favicon.ico (from math.iisc.ac.in/ugc-cas/design/index.html)
+10:42:06	Error: 	"Not Found" (404) at link math.iisc.ac.in/ http:/disc.iisc.ernet.in/videos.htm (from math.iisc.ac.in/degprog-phd.htm)
+10:42:06	Error: 	"Not Found" (404) at link math.iisc.ac.in/nbhm_paper13/nbhmra11key_pdf_57541.pdf (from math.iisc.ac.in/degprog-phd.htm)
+10:42:06	Error: 	"Not Found" (404) at link math.iisc.ac.in/nbhm_paper13/nbhmra12ans.pdf (from math.iisc.ac.in/degprog-phd.htm)
+10:42:06	Error: 	"Not Found" (404) at link math.iisc.ac.in/seminars2017/dec17_files/injection_graph_func.htm (from math.iisc.ac.in/seminars2017/jan20.htm)
+10:42:06	Warning: 	Link math.iisc.ac.in/~arvind/ not scanned (follow robots meta tag)
+10:42:40	Warning: 	file not stored in cache due to bogus state (broken size, expected 2454614 got 2132635): math.iisc.ac.in/~gadgil/AlgebraicTopology/homology.pdf
+10:42:41	Warning: 	file not stored in cache due to bogus state (broken size, expected 5240058 got 2136979): math.iisc.ac.in/~gadgil/AlgebraicTopology/IntroAlgTop.pdf
+10:51:47	Error: 	"Not Found" (404) at link math.iisc.ac.in/~surjik15/ (from math.iisc.ac.in/people_if.htm)
+10:54:46	Error: 	"Not Found" (404) at link math.iisc.ac.in/Preprints Server  Department of Mathematics, IISc_files/mathestil.htm (from math.iisc.ac.in/pub1991-2007.html)
+10:55:40	Error: 	"Not Found" (404) at link math.iisc.ac.in/~ifcam/project14.html (from math.iisc.ac.in/~ifcam/project.html)
+10:58:58	Error: 	"Not Found" (404) at link math.iisc.ac.in/~ifcam/download.html (from math.iisc.ac.in/~ifcam/download.htm)
+10:58:58	Error: 	"Not Found" (404) at link math.iisc.ac.in/~nmi/images/div-horz-blue.gif (from math.iisc.ac.in/~nmi/scripts/imi.css)
+10:58:58	Error: 	"Not Found" (404) at link math.iisc.ac.in/~nmi/images/bak-cell.gif (from math.iisc.ac.in/~nmi/scripts/imi.css)
+11:01:47	Error: 	"Not Found" (404) at link math.iisc.ac.in/images/div-horz-header.jpg (from math.iisc.ac.in/~nmi/otherevents.php)
+11:01:47	Error: 	"Not Found" (404) at link math.iisc.ac.in/images/div-horz-gray.jpg (from math.iisc.ac.in/~nmi/otherevents.php)
+11:01:47	Warning: 	engine: warning: unserialize error for math.iisc.ac.in/~nmi/otherevents-seminars-past.php (./math.iisc.ac.in/_nmi/otherevents-seminars-past.html), file disappeared: No such file or directory
+11:01:47	Error: 	"Not Found" (404) at link math.iisc.ac.in/images/div-vert-links.jpg (from math.iisc.ac.in/~nmi/otherevents.php)
+11:04:29	Error: 	"Not Found" (404) at link math.iisc.ac.in/~nmi/default.php (from math.iisc.ac.in/~nmi/contact.php)
+11:10:20	Error: 	"Not Found" (404) at link math.iisc.ac.in/atom.xml (from math.iisc.ac.in/~gadgil/AlgebraicTopology/home/)
+11:10:21	Warning: 	Retry after error -4 (Incorrect length (2136979 Bytes, 5240058 expected)) at link math.iisc.ac.in/~gadgil/AlgebraicTopology/IntroAlgTop.pdf (from math.iisc.ac.in/~gadgil/AlgebraicTopology/home/)
+11:10:22	Warning: 	Retry after error -4 (Incorrect length (2132635 Bytes, 2454614 expected)) at link math.iisc.ac.in/~gadgil/AlgebraicTopology/homology.pdf (from math.iisc.ac.in/~gadgil/AlgebraicTopology/home/)
+11:10:50	Error: 	"Not Found" (404) at link math.iisc.ac.in/courses/courses2001/op_theory.htm (from math.iisc.ac.in/coursesold.htm)
+11:10:51	Error: 	"Not Found" (404) at link math.iisc.ac.in/courses/jan-july2006/algebraic.htm (from math.iisc.ac.in/coursesold.htm)
+11:10:51	Warning: 	Found for math.iisc.ac.in/~imi/
+11:10:51	Warning: 	File has moved from math.iisc.ac.in/~imi/ to http://math.iisc.ernet.in/~nmi/
+11:10:53	Error: 	"Not Found" (404) at link math.iisc.ac.in/ugc-cas/design/images/subscribe_bg.gif (from math.iisc.ac.in/ugc-cas/design/style.css)
+11:10:53	Error: 	"Not Found" (404) at link math.iisc.ac.in/ugc-cas/design/images/subscribe_bg_hover.gif (from math.iisc.ac.in/ugc-cas/design/style.css)
+11:10:53	Error: 	"Not Found" (404) at link math.iisc.ac.in/ugc-cas/design/images/signup_bg.gif (from math.iisc.ac.in/ugc-cas/design/style.css)
+11:10:53	Error: 	"Not Found" (404) at link math.iisc.ac.in/ugc-cas/design/images/signup_bg_hover.gif (from math.iisc.ac.in/ugc-cas/design/style.css)
+11:10:53	Error: 	"Not Found" (404) at link math.iisc.ac.in/ugc-cas/design/images/xhtml_bg.gif (from math.iisc.ac.in/ugc-cas/design/style.css)
+11:10:53	Error: 	"Not Found" (404) at link math.iisc.ac.in/ugc-cas/design/images/xhtml_bg_hover.gif (from math.iisc.ac.in/ugc-cas/design/style.css)
+11:10:53	Error: 	"Not Found" (404) at link math.iisc.ac.in/ugc-cas/design/images/css_bg.gif (from math.iisc.ac.in/ugc-cas/design/style.css)
+11:10:53	Error: 	"Not Found" (404) at link math.iisc.ac.in/ugc-cas/design/images/css_bg_hover.gif (from math.iisc.ac.in/ugc-cas/design/style.css)
+11:11:15	Error: 	"Not Found" (404) at link math.iisc.ac.in/seminars2008/Dec16.htm (from math.iisc.ac.in/seminars2008.htm)
+11:11:17	Error: 	"Not Found" (404) at link math.iisc.ac.in/seminars2007/dec06.htm (from math.iisc.ac.in/seminars2007.htm)
+11:11:24	Error: 	"Not Found" (404) at link math.iisc.ac.in/seminars2016/dec17_files/injection_graph_func.htm (from math.iisc.ac.in/seminars2016/dec28.htm)
+11:29:18	Error: 	"Not Found" (404) at link math.iisc.ac.in/~mkg/teaching (from math.iisc.ac.in/~mkg/)
+11:31:14	Error: 	"Not Found" (404) at link math.iisc.ac.in/w/pop.cgi?sid=7565&m=2&v=1.8&c= (from math.iisc.ac.in/~skiyer/)
+11:31:14	Error: 	"Not Found" (404) at link math.iisc.ac.in/images/hrule.gif (from math.iisc.ac.in/~skiyer/)
+11:48:14	Error: 	Unable to save file ./math.iisc.ac.in/_patil/web_courses.html: Is a directory
+12:25:05	Error: 	"Not Found" (404) at link math.iisc.ac.in/index.htm (from math.iisc.ac.in/people-stu-intdisphd.htm)
+12:25:06	Error: 	"Not Found" (404) at link math.iisc.ac.in/~mathbio/MPWSdeadlines.php (from math.iisc.ac.in/~mathbio/MPWS.php)
+12:49:03	Error: 	"Not Found" (404) at link math.iisc.ac.in/~nmi/images/bg.gif (from math.iisc.ac.in/~nmi/scripts/core.css)
+12:49:03	Error: 	"Not Found" (404) at link math.iisc.ac.in/~nmi/images/cmxform-divider.gif (from math.iisc.ac.in/~nmi/scripts/cmxform.css)
+13:52:02	Error: 	"Not Found" (404) at link math.iisc.ac.in/~nmi/atp-compact0708.htm (from math.iisc.ac.in/~nmi/atp-0708.php)
+13:53:53	Error: 	"Not Found" (404) at link math.iisc.ac.in/~nmi/atp-compact0607.htm (from math.iisc.ac.in/~nmi/atp-0607.php)
+13:55:01	Error: 	"Not Found" (404) at link math.iisc.ac.in/~nmi/Indo2005/index.html (from math.iisc.ac.in/~nmi/atp-0506.php)

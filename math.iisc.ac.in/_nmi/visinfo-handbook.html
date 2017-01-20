@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from math.iisc.ac.in/~nmi/visinfo-handbook.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Jan 2017 05:32:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>NMI - National Mathematics Initiative</title>
+<script type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<link href="scripts/imi.css" rel="stylesheet" type="text/css" />
+<!-- Form Validation Assets Begin -->
+<link rel="stylesheet" type="text/css" media="screen" href="scripts/screen.css" />
+<script src="lib/jquery.js" type="text/javascript"></script>
+<script src="lib/jquery.metadata.js" type="text/javascript"></script>
+<script src="scripts/jquery.validate.js" type="text/javascript"></script>
+<script src="lib/cmxforms.js" type="text/javascript"></script>
+<style type="text/css">
+.cmxform fieldset p.error label {
+	color: red;
+}
+div.container {
+	background-color: #eee;
+	border: 1px solid red;
+	margin: 5px;
+	padding: 5px;
+}
+div.container ol li {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+div.container {
+	display: none
+}
+.container label.error {
+	display: inline;
+}
+form.cmxform {
+}
+form.cmxform label.error {
+	display: block;
+	margin-left: 1em;
+	width: auto;
+}
+</style>
+<script type="text/javascript">
+// only for demo purposes
+//$.validator.setDefaults({
+//	submitHandler: function() {
+//		alert("submitted! (skipping validation for cancel button)");
+//	}
+//});
+
+$().ready(function() {
+	$("#RFP").validate({
+		errorLabelContainer: $("#RFP div.error")
+	});
+	
+	var container = $('div.container');
+	// validate the form when it is submitted	
+	$(".cancel").click(function() {
+		validator.resetForm();
+	});
+	
+
+});
+</script>
+<!-- Form Valiation Assets End -->
+</head>
+<body onload="MM_preloadImages('images/lnk-aboutimi1.jpg','images/lnk-seminars1.jpg','images/lnk-thematicprog2.html','images/lnk-thematicprog1.jpg','images/lnk-phdprog1.jpg','images/lnk-requestforpart1.jpg','images/lnk-visitorinfo1.jpg','images/lnk-fundingagencies1.jpg','images/lnk-contact1.jpg')">
+<a name="top" id="top"></a>
+<table width="880" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>&nbsp;&nbsp;
+      <script type="text/javascript">
+
+// Current Server Time script (SSI or PHP)- By JavaScriptKit.com (http://www.javascriptkit.com)
+// For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+// This notice must stay intact for use.
+
+//Depending on whether your page supports SSI (.shtml) or PHP (.php), UNCOMMENT the line below your page supports and COMMENT the one it does not:
+//Default is SSI method is uncommented:
+
+//var currenttime = '<!--#config timefmt="%B %d, %Y %H:%M:%S"--><!--#echo var="DATE_LOCAL" -->' //SSI method of getting server date
+//var currenttime = '<? print date("F d, Y H:i:s", time())?>' //PHP method of getting server date
+var currenttime = '<? print date("F d, Y H:i:s")?>' //PHP method of getting server date
+
+///////////Stop editting here/////////////////////////////////
+
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+var serverdate=new Date(currenttime)
+
+function padlength(what){
+var output=(what.toString().length==1)? "0"+what : what
+return output
+}
+
+function displaytime(){
+serverdate.setSeconds(serverdate.getSeconds()+1)
+var datestring=montharray[serverdate.getMonth()]+" "+padlength(serverdate.getDate())+", "+serverdate.getFullYear()
+var timestring=padlength(serverdate.getHours())+":"+padlength(serverdate.getMinutes())+":"+padlength(serverdate.getSeconds())
+document.getElementById("servertime").innerHTML=datestring
+}
+
+window.onload=function(){
+setInterval("displaytime()", 1000)
+}
+
+
+</script>
+      <span id="servertime"></span>&nbsp;</td>
+    <td align="right"><a href="index-2.html"><img src="images/icon-home.jpg" width="27" height="25" border="0" align="absmiddle" /></a>&nbsp;<a href="index-2.html">Home</a>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="images/spacer.gif" width="50" height="10" /></td>
+  </tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><a href="aboutimi-overview.html" target="_top" onclick="MM_nbGroup('down','group1','aboutimi','images/lnk-aboutimi1.jpg',1)" onmouseover="MM_nbGroup('over','aboutimi','images/lnk-aboutimi1.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="images/lnk-aboutimi.jpg" alt="About NMI" name="aboutimi" width="108" height="31" border="0" id="aboutimi" onload="" /></a></td>
+    <td><a href="atp.html" target="_top" onclick="MM_nbGroup('down','group1','thematicprogrammes','images/lnk-thematicprog1.jpg',1)" onmouseover="MM_nbGroup('over','thematicprogrammes','images/lnk-thematicprog1.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="images/lnk-thematicprog.jpg" alt="Thematic Programmes" name="thematicprogrammes" width="120" height="31" border="0" id="thematicprogrammes" onload="" /></a></td>
+    <td><a href="otherevents.html" target="_top" onclick="MM_nbGroup('down','group1','otherevents','images/lnk-otherevents1.jpg',1)" onmouseover="MM_nbGroup('over','otherevents','images/lnk-otherevents1.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="images/lnk-otherevents.jpg" alt="Other Events" name="otherevents" width="107" height="31" border="0" id="otherevents" onload="" /></a></td>
+    <td><a href="PhD%20Home.html" target="_top" onclick="MM_nbGroup('down','group1','phdprogrammes','images/lnk-phdprog1.jpg',1)" onmouseover="MM_nbGroup('over','phdprogrammes','images/lnk-phdprog1.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="images/lnk-phdprog.jpg" alt="Ph.d Programmes" name="phdprogrammes" width="133" height="31" border="0" id="phdprogrammes" onload="" /></a></td>
+    <td><a href="atp-requestforparticipation.html" target="_top" onclick="MM_nbGroup('down','group1','requestforpart','images/lnk-requestforpart1.jpg',1)" onmouseover="MM_nbGroup('over','requestforpart','images/lnk-requestforpart1.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="images/lnk-requestforpart.jpg" alt="Request for Participation" name="requestforpart" width="110" height="31" border="0" id="requestforpart" onload="" /></a></td>
+    <td><a href="visitorinfo.html" target="_top" onclick="MM_nbGroup('down','group1','visitorinfo','images/lnk-visitorinfo1.jpg',1)" onmouseover="MM_nbGroup('over','visitorinfo','images/lnk-visitorinfo1.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="images/lnk-visitorinfo.jpg" alt="Visitor and Local Information" name="visitorinfo" width="112" height="31" border="0" id="visitorinfo" onload="" /></a></td>
+    <td><a href="fundingagencies.html" target="_top" onclick="MM_nbGroup('down','group1','fundingagencies','images/lnk-fundingagencies1.jpg',1)" onmouseover="MM_nbGroup('over','fundingagencies','images/lnk-fundingagencies1.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="images/lnk-fundingagencies.jpg" alt="Funding Agencies" name="fundingagencies" width="81" height="31" border="0" id="fundingagencies" onload="" /></a></td>
+    <td><a href="contact.html" target="_top" onclick="MM_nbGroup('down','group1','contact','images/lnk-contact1.jpg',1)" onmouseover="MM_nbGroup('over','contact','images/lnk-contact1.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="images/lnk-contact.jpg" alt="Contact" name="contact" width="82" height="31" border="0" id="contact" onload="" /></a></td>
+  </tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="images/spacer.gif" width="100" height="10" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/bannerimg-main.jpg" alt="National Mathematics Initiative (NMI)" width="880" height="190" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/spacer.gif" width="100" height="10" /></td>
+  </tr>
+</table>
+<table width="880" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="3" background="images/div-horz-header.jpg"><img src="images/spacer.gif" width="10" height="35" align="absmiddle" /><span class="headmain">VISITOR / LOCAL INFORMATION</span> <img src="images/spacer.gif" width="5" height="35" align="absmiddle" /> <span class="head1">&raquo; VISITOR HANDBOOK</span></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" background="images/div-horz-gray.jpg"><img src="images/spacer.gif" width="10" height="10" align="absmiddle" /></td>
+    <td align="left" valign="top" background="images/div-horz-gray.jpg"><img src="images/spacer.gif" width="10" height="10" align="absmiddle" /></td>
+    <td width="650" align="left" valign="top" background="images/div-horz-gray.jpg"><img src="images/spacer.gif" width="10" height="10" align="absmiddle" /></td>
+  </tr>
+  <tr>
+    <td width="220" align="left" valign="top"><table width="220" border="0" cellspacing="0" cellpadding="5">
+      <tr>
+        <td>&raquo; <a href="visitorinfo.html">Home</a> </td>
+      </tr>
+      <tr>
+        <td>&raquo; <a href="visinfo-handbook.html">Visitor Handbook</a></td>
+      </tr>
+      <tr>
+        <td background="images/panel-bak-div-horz.jpg">&raquo; <a href="visinfo-campus.html">Campus Guide</a></td>
+      </tr>
+      <tr>
+        <td background="images/panel-bak-div-horz.jpg">&raquo; <a href="visinfo-iiscmap.html">IISc Map</a></td>
+      </tr>
+      <tr>
+        <td background="images/panel-bak-div-horz.jpg">&raquo; <a href="http://www.iisc.ernet.in/quicklinks/tel_dir/" target="_blank">IISc                     Telephone Directory</a></td>
+      </tr>
+      <tr>
+        <td background="images/panel-bak-div-horz.jpg">&raquo; <a href="http://www.indtravel.com/bang/bangalore.html" target="_blank">About                     Bangalore</a></td>
+      </tr>
+      <tr>
+        <td background="images/panel-bak-div-horz.jpg">&raquo; <a href="http://www.bangalorehotels.net/" target="_blank">Hotels                     in Bangalore</a></td>
+      </tr>
+      <tr>
+        <td background="images/panel-bak-div-horz.jpg">&raquo; <a href="http://www.xe.com/" target="_blank">Currency                     Exchange</a></td>
+      </tr>
+      <tr>
+        <td background="images/panel-bak-div-horz.jpg">&raquo; <a href="http://weather.yahoo.com/forecast/INXX0012.html" target="_blank">Daily Weather Forecast</a></td>
+      </tr>
+      <tr>
+        <td background="images/panel-bak-div-horz.jpg">&nbsp;</td>
+      </tr>
+    </table></td>
+    <td width="10" align="left" valign="top" background="images/div-vert-links.jpg"><img src="images/spacer.gif" width="5" height="35" align="absmiddle" /></td>
+    <td align="left" valign="top"><table width="95%" border="0" cellspacing="0" cellpadding="5">
+                <tr valign="top"> 
+                  <td><ul>
+                      <li> <a href="#adminstaff">Administration and Staff</a></li>
+                      <li> <a href="#officetime">Office Timings, Secretarial                           Support, Office Supplies</a></li>
+                      <li> <a href="#copiers">Copying Machines</a></li>
+                      <li> <a href="#mail">Mail/Postage</a></li>
+                      <li> <a href="#boarding">Boarding and Lodging</a></li>
+                      <li> <a href="#telfax">Usage of Telephone / Fax Machines</a></li>
+                      <li> <a href="#finance">Financial Information</a></li>
+                      <li> <a href="#lectures">Lectures / Workshops requirements</a></li>
+                      <li> <a href="#emergency">Emergency and Security Information</a></li>
+                      <li><a href="#medical"> Medical Emergencies</a></li>
+                      <li> <a href="#taxi">Taxi/Cab Information</a></li>
+                      <li> <a href="#library">Library</a></li>
+                      <li> <a href="#announcements">Announcements</a></li>
+                      <li> <a href="#computer">Computer/Workstation Information</a></li>
+                      <li> <a href="#visa">Visa and Travel Information for International                           Visitors</a></li>
+                      <li> <a href="#dining">Dining Guide</a></li>
+                      <li><a href="#security">Security</a></li>
+                      <li> <a href="http://www.iisc.ernet.in/misc/tele.html" target="_blank">IISc                           Telephone Directory</a></li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <p align="justify">Welcome to the National Mathematics Initiative                         (NMI). This handbook contains information regarding office                         procedures, boarding and lodging, infrastructure support,                         etc. If you have any further questions please feel free                         to contact our staff.</p>
+                    <p align="justify">&nbsp;</p>
+                    <p align="justify"><strong>Administration                         and Staff<a name="adminstaff" id="adminstaff"></a></strong></p>
+                    <p align="justify">National Mathematics Initiative (NMI) is housed                         in the Department of Mathematics, which also serves as the                         nodal Department.</p>
+                    <p align="justify">&nbsp;</p>
+                    <p align="justify">&nbsp; </p>
+                    <blockquote>
+                      <p><strong>Convener</strong></p>
+                      <ul>
+                        <li>Prof. Govindan Rangarajan<br />
+                          Department of Mathematics<br />
+                          Indian Institute of Science<br />
+                          Bangalore - 560 012<br />
+                          Phone No: 91-80-22933213, 22932264<br />
+                          E-mail : <a href="mailto:rangaraj@math.iisc.ernet.in">rangaraj@math.iisc.ernet.in</a></li>
+                      </ul>
+                      <p><strong>NMI Staff</strong></p>
+                    </blockquote>
+                    <ul>
+                      <!--<li>Ms. Shakuntala. G<br />
+                      </li>-->
+                      <li>Ms. Sai Prasanna. M<br />
+                      </li>
+                      <li>Ms. Pooja Sharma<br />
+                      </li>
+                    </ul>
+                    <p><strong>Office Timings<a name="officetime" id="officetime"></a></strong></p>
+                    <p>The NMI Office is open from 9.00 am - 5:30 pm from Monday                         through Friday. <br />
+                    Lunch break is between 1.00 pm - 2.00 pm.</p>
+                    <p><br />
+                        <strong>Secretarial Support<a name="secretary" id="secretary"></a></strong></p>
+                    <p>The NMI staff at the Mathematics                         Department can help you in any task related to NMI activities.</p>
+                    <p><strong><br />
+                      Office Supplies<a name="supplies" id="supplies"></a></strong></p>
+                    <p>Office supplies and overhead                         transparencies are available from the NMI Office. We have                         both the write-on and copy machine transparencies. </p>
+                    <p><strong><br />
+                      Copy Machines<a name="copiers" id="copiers"></a></strong></p>
+                    <p>Copying of a few pages can be                         done by the NMI staff. For your other copying needs, there                         are commercial copying centers located in the main IISc                         library, near the coffee board and near Tata Memorial Club                         (please refer to <a href="http://www.math.iisc.ernet.in/~NMI/visinfo-iiscmap.htm">IISc map</a> for location), open from 8:30 am to 8:30 pm. &nbsp; </p>
+                    <p><strong><br />
+                      Mail/Postage<a name="mail" id="mail"></a></strong></p>
+                    <p>The NMI will pay the postage                         for NMI business related items. We have envelopes available                         for your use. For all other mailing needs there is a full                         service post office located outside the Campus opposite                         to the main gate. The Post office (open 9-5 Mon-Sat) is                         approached from Prof. CNR Rao circle. It handles registered                         post, speed post, express mail, money order etc. in addition                         to regular mail.</p>
+                    <p><br />
+                        <strong>Boarding and Lodging<a name="boarding" id="boarding"></a></strong></p>
+                    <p> Your boarding and lodging needs                         will be taken care of prior to your visit and necessary                         information will be forwarded to you. For further clarifications                         if any, contact the Secretary, NMI (<a href="mailto:nmi@math.iisc.ernet.in">nmi@math.iisc.ernet.in</a>)</p>
+                    <p><br />
+                        <strong>Telephone/FAX Machine <a name="telfax" id="telfax"></a></strong> </p>
+                    <blockquote>
+                      <p>&nbsp;</p>
+                      <p><strong>Telephone</strong></p>
+                      <p> Departmental phones can be used for official purposes.                           If there is an emergency and someone needs to use the                           phone system to place a personal call, you may go to the                           STD/ISD (national / international / long distance) booth                           west of Canara bank, or to the Telecom Center (7 am to                           10 pm, open on all days except Sundays). A new chip card                           type PCO has been installed at the U-block entrance and                           the telecom centre. You can prepay and buy the chip cards                           and use it for STD calls.</p>
+                      <p><br />
+                          <strong>Dialing instructions</strong></p>
+                      <p>Please note that all four digit numbers starting with                           &quot;2&quot; (of the form 2xxx) are valid only within IISc. To                           call these numbers from outside IISc, prefix the number                           with &quot;2293&quot;.</p>
+                      <p><br />
+                          <strong>FacsNMIle Machine (FAX)</strong></p>
+                      <p>The fax machine in the office is only for NMI business                           use. Please check with staff at the office for assistance                           with faxing and the staff can show you how to use the                           fax machine. Incoming fax transmissions for NMI participants                           will be delivered to you. </p>
+                    </blockquote>
+                    <p><br />
+                        <strong>Financial/Accounting Information</strong> <a name="finance" id="finance"></a> </p>
+                    <blockquote>
+                      <p>&nbsp;</p>
+                      <p><strong>Expense Reimbursements<br />
+                      </strong> If the NMI has offered to pay any of your expenses                           you will receive a reimbursement form in your registration                           packet. Please fill it up, attach the required tickets                           / bills and hand it over to NMI staff. </p>
+                      <p>&nbsp;</p>
+                      <p><strong>Currency Exchange:</strong> For updated rates, <a href="http://www.xe.com/" target="_blank">click here</a>.</p>
+                      <p>&nbsp;</p>
+                      <p><strong>Banks<br />
+                      </strong>There are two locations within the campus where you                           will be able to convert your currency to Indian Rupees 
+                      </p>
+                      <ol>
+                        <li>State Bank of India<br />
+                          Phone: 91-80-22932484<br />
+                          <br />
+                        </li>
+                        <li> Thomas Cook<br />
+                          Phone no: 91-80-23601093, 22932699 <br />
+                          <br />
+                        </li>
+                        <li>TT Holdings </li>
+                      </ol>
+                      <p>The other bank within the Campus is:</p>
+                      <ol>
+                        <li>Canara Bank<br />
+                          Phone: 91-80-22932483</li>
+                      </ol>
+                    </blockquote>
+                    <strong><br />
+Lectures/Workshops</strong> <a name="lectures" id="lectures"></a>
+<blockquote>
+  <p>&nbsp;</p>
+  <p><strong>Registration<br />
+  </strong>If you are attending a workshop, please register using                           the form provided on the website.</p>
+  <p>&nbsp;</p>
+  <p><strong>Lecture Notes/Material from Talks<br />
+  </strong>If you are a speaker, please bring your lecture notes                           to the office and the staff will scan and post them on                           the NMI web page. We can duplicate directly from transparencies,                           however, we would appreciate a copy instead. </p>
+  <p>&nbsp;</p>
+  <p><strong>Audio Visual Needs<br />
+  </strong>Please let the staff know of any special needs such                           as LCD projector, Overhead projector, etc. </p>
+</blockquote>
+<strong><br />
+Emergency and Security Information</strong> <a name="emergency" id="emergency"></a>
+<blockquote>
+  <p>&nbsp;</p>
+  <p><strong>Emergency<br />
+  </strong>Dial &quot;100-Police, 101-Fire, 102-ambulance, 103-Traffic                           Police&quot; in an emergency, either from the campus phone                           system or from the regular public phone system. You can                           also contact the Campus Security at 22932225 or 22932841                           or 22932400.</p>
+  <p>&nbsp;</p>
+  <p><strong>Office Key<br />
+  </strong>If an office key or room key was provided to you during                           your stay <strong>Please return it to the NMI office or to                           the Department Office before you leave.</strong> The NMI operates                           from 9.00 a.m - 5.30 p.m Monday through Friday. </p>
+  <p>&nbsp;</p>
+  <p><strong>Security Reminder<br />
+  </strong>When you are not in your office, please keep your                           office door locked for safe keeping of your personal items                           and NMI equipment.</p>
+</blockquote>
+<p><strong><br />
+  Medical Emergencies<a name="medical" id="medical"></a></strong></p>
+<p>Dial &quot;22932227 / 22932234 - Health Centre&quot; in an emergency,                         either from the campus phone system or from the regular                         public phone system. </p>
+<p>&nbsp;</p>
+<p>The Health Centre of the <a href="http://tejas.serc.iisc.ernet.in/">Indian                         Institute of Science</a>, Bangalore&nbsp;provides health&nbsp;care                         to the institute community comprising staff and students.                         A large number of the staff members and their families are                         residents in the campus. Though small in relative terms,                         the health centre is well equipped to undertake a number                         of clinical investigations and offers outpatient care as                         well as provides in-patient treatment. The Health Centre                         is located at the south-west end of the campus, close to                         the J N Center building, and opposite to the students' hostel. </p>
+<p>For more details please <a href="http://www.iisc.ernet.in/medicare" target="_blank">click                         here</a></p>
+<p><strong><br />
+  Taxi/Cab Information<a name="taxi" id="taxi"></a></strong></p>
+<p>Taxis can be booked by contacting                         one of the following companies. </p>
+<ul>
+  <li>Aishwarya Travels &ndash; 23374826 / 23477607</li>
+  <li>Cabs centre &ndash; 23415080 / 23417058</li>
+  <li>Gayathri Travels - 23327122 / 23520946</li>
+  <li>Pushpak Travel Agents - 23417464 / 23415433</li>
+  <li>Rathnagiri Travels &ndash; 23341011 / 23344952 </li>
+</ul>
+<strong><br />
+Library <a name="library" id="library"></a></strong>
+<p><a href="http://www.library.iisc.ernet.in/" target="_blank">J.R.D.                         TATA Memorial Library</a>, popularly known as the <a href="http://www.iisc.ernet.in/" target="_blank">Indian                         Institute of Science</a> Library, is one of the best Science                         and Technology libraries in India. Started in 1911, as one                         of the first three departments in the Institute, it has                         become a precious national resource center in the field                         of Science and Technology. </p>
+<p>You will need a temporary pass                         or card (you can contact the NMI secretary or the Department                         office for the procedure) to enter the library. </p>
+<p><br />
+    <strong>Announcements <a name="announcements" id="announcements"></a></strong></p>
+<p>Any announcements listing important                         information, talks, workshops, etc will be displayed on                         the display boards inside the office. We encourage you to                         read it.</p>
+<p><br />
+    <strong>Computer/Workstation Information</strong> <a name="computer" id="computer"></a> </p>
+<p>A computer room has been set                         up in the Mathematics Department to make it convenient to                         the visitors to check mails.</p>
+<p><br />
+    <strong>Visa and Travel Information for                         International visitors<a name="visa" id="visa"></a></strong></p>
+<p>An entry visa is essential for all foreigners visiting                         India. A visitor's Visa or Visa for attending the workshop                         / conference can be obtained from your nearest Indian Embassy                         / consulate / high commission on producing valid passport,                         travel documents and sufficient means of support. If you                         are planning to visit neighboring countries and re-enter                         India, please obtain a multiple entry visa. Please write                         to the secretariat if you need any help such as an invitation                         letter for obtaining the visa. It is advisable to apply                         for the visa at least two months ahead of the event.</p>
+<p>&nbsp;</p>
+<p>Click here to view details of <a href="http://www.embassyworld.com/embassy/india1.htm" target="_blank">Indian                         Embassies</a></p>
+<p>&nbsp;</p>
+<p>Bangalore has an international                         airport. Airlines flying into Bangalore include Air India,                         Lufthansa, Singapore Airlines, Malaysian Airlines and Sri                         Lankan Airlines. You can also come to Bangalore via Mumbai,                         Chennai, Delhi or Kolkata. There are a number of public                         and private airlines operating between Bangalore and the                         above cities. Customs and immigration clearance will be                         at Bangalore only if you fly directly to Bangalore. Otherwise                         it will be at the port of entry. Since flights to and from                         India are full most of the time, it is recommended to book                         your ticket several months in advance of your journey date. </p>
+<p>&nbsp;</p>
+<p>Indian local time is ahead of                         Greenwich Mean Time (GMT) by 5:30 hours. International flights                         to/from India arrive/depart typically between midnight and                         early morning, while Indian domestic flights are mostly                         during the daytime. This makes getting good connections                         difficult. Only from Mumbai to Bangalore are there early                         morning flights by Air India and Jet Airways. Other domestic                         flights start around 6am. If you do not have a direct flight                         to Bangalore, you will have to clear immigration/customs                         formalities at your entry-point in India. </p>
+<p>&nbsp;</p>
+<p>In Mumbai and in Delhi, the                         international and domestic flight terminals are at different                         locations, though the flights use the same runway. All airlines                         other than Air India require a change of terminals, and                         they offer free bus service between the two terminals running                         around the clock once every hour. The bus-stops are not                         clearly marked, so please ask the airport authorities to                         direct you to the location of the bus-stops. </p>
+<p>&nbsp;</p>
+<p>For persons who would like to                         take a break (particularly to recover from jetlag or to                         have a nap), and not mind the price, a convenient retreat                         is the <a href="http://www.centaurhotel.com/" target="_blank">Centaur                         group of hotels</a>, with branches just next to the airports                         in Mumbai and Delhi. Reservations in less expensive hotels                         close to the airports are not easily available, but you                         may still ask for them in your e-mail. All the major Indian                         airports offer pre-paid taxi service (advisable if you don't                         want to argue with the driver later), and hotel/tourist                         information. Bangalore city railway station also has a service                         counter for pre-paid vehicles. </p>
+<p>&nbsp;</p>
+<p>The Indian currency is Rupee                         (1 US$ = 45.88 Rupees at the beginning of July 2004; more                         recent information can be found at the <a href="http://www.rbi.org.in/" target="_blank">Currency                         Exchange</a>). Currency conversion is possible at airports                         and banks, although many of them deal only with US-dollars                         and British-pounds. At the end of the trip, rupees can be                         converted back into foreign currency, only if one has receipts                         demonstrating that a larger amount of foreign currency was                         converted into rupees earlier during the trip. </p>
+<p>&nbsp;</p>
+<p>If you are carrying large amount                         of foreign currency (not travellers cheques but cash), that                         should be declared at the customs when entering India. Travellers                         cheques do not have to be declared and are easier to carry.                         Expensive equipment liable to custom duty (e.g. laptop computers                         and video cameras) should also be declared at the customs.                         Such items will be entered in your passport, and you don't                         have to pay any duty provided that you take them back when                         you return. </p>
+<p>&nbsp;</p>
+<p>International credit cards are                         accepted at major hotels and shops, but not everywhere.                         The HDFC bank close to IISc has a 24-hour ATM, where you                         can use international credit cards to get Indian currency.                         The ATM provides a better exchange rate than that offered                         by hotels and shops. (The HDFC bank charges the credit card                         company Rs.55 per transaction. The amount charged by the                         credit card company to you will depend on the agreement                         between you and your credit card company.) </p>
+<p>&nbsp;</p>
+<p>Avoid accepting currency notes                         of denominations Rupee 1,2 and 5; ask for the corresponding                         coins instead. The government has stopped printing these                         notes, but old damaged and soiled notes are still in circulation. </p>
+<p>India uses the metric system                         of measurements (it is after all the birthplace of the decimal                         system). The electricity supply in India is 220 Volts and                         50 Hz. Appliances requiring 110 Volts would need a voltage                         adapter. The electrical sockets require three (or two) round                         pin plugs. Telephone booths with international call facility                         and internet cafes, accessible with cash payment, can be                         found at many street corners in the cities. Card-operated                         telephones (magnetic cards or electronic accounts) exist                         at many public places (e.g. airports, hotels, IISc guest                         house). The cards are issued by the Telecom Department of                         Government of India, in denominations of 100, 200, 500,                         1000 units. 1 unit costs approximately 1.20 rupee, and works                         for about 1 minute for local calls and for about 1 second                         for calls to the USA. </p>
+<p><strong><br />
+  Housing<a name="housing" id="housing"></a></strong></p>
+<p>Your housing needs will be taken care of in advance to                         your visit and the same will be intimated to you prior to                         your visit to the institute.</p>
+<p><strong><br />
+  Dining Guide<a name="dining" id="dining"></a></strong></p>
+<blockquote>
+  <p><strong>Snacks on campus.</strong> </p>
+  <ul>
+    <li> The Coffee Board (marked Cafe on your map, phone-2521)                             offers snacks and coffee from 9:30-6 on all days except                             Institute holidays, second Saturdays and Sundays.<br />
+        <br />
+    </li>
+    <li> There's a Tea kiosk (phone-2872) next to the coffee                             board that functions from 3 pm till around midnight                             on all days including weekends. It is good for tea,                             coffee, samosas, pastries, etc. <br />
+        <br />
+    </li>
+    <li>The TMSC canteen (marked TMC on your map) offers snacks,                             tea and coffee from 7 am to 6 pm on all days except                             Sundays. <br />
+        <br />
+    </li>
+    <li> There is a Nilgiris (Snack) shop in front of Faculty                             Club (open till 10 PM). </li>
+  </ul>
+  <p>The small shopping area at the far north end of the campus                           has a bakery and a fruit/vegetable shop. In addition,                           vendors seated on the road near TMC, SBI and NCSI offer                           fresh fruits, groundnuts, etc. in the daytime (but not                           on Sundays).</p>
+  <p>&nbsp;</p>
+  <p><strong>Restaurants and Hotels within a bus ride</strong> </p>
+  <p>Campus is rather dead in the evenings and on weekends,                           so you might wish to venture out into Malleswaram or Yeshwantpur.                           The MG Road, Brigade Road, Commercial Street, Kempe Gowda                           Road are the major shopping areas in Bangalore. Any Bangalore                           guide map will tell you where these places are located.</p>
+  <p>Malleswaram is south of campus. Mariamma Temple circle                           is at the north end of Malleswaram. Streets are organised                           as north south &quot;mains&quot; and east west &quot;crosses&quot;. The mains                           increase in number as you go west. Second main is actually                           called Sampige Road; third main is called Margosa road.                           These two mains are important: buses run on them, there                           are lots of shops (esp. on Sampige road) but they are                           one-way streets. The crosses increase in number as you                           come north, toward IISc. The 18th cross bus stand is a                           five-minute walk south from Circle Mariamma temple, and                           is located at 18th cross and Margosa. There's a nice shopping                           area centered at 8th cross and Sampige Road.</p>
+  <p>&nbsp;</p>
+  <p><strong>Eating Places -</strong> A few of the better known eating                           places are listed below</p>
+  <ul>
+    <li> Eat out - A large fast food place located at 15th                             cross and 8th main<br />
+        <br />
+    </li>
+    <li> Janatha hotel - Good for south Indian snacks. Located                             at 8th cross just west of Sampige Road<br />
+        <br />
+    </li>
+    <li> Vaishali - Good for South Indian snacks. Located                             at 8th cross, between Margosa and Sampige, first floor<br />
+        <br />
+    </li>
+    <li> Shakti - Located at Sampige, around 6th cross opposite                             to bus stop serves good roti-sabji<br />
+        <br />
+    </li>
+    <li> Suhas - A simple decent food is available at Suhas                             located at Sampige and 2nd cross 1st floor<br />
+        <br />
+    </li>
+    <li> NKB (New Krishna Bhavan) - This hotel located at                             north of Bhashyam park, which is at the south end of                             Sampige is good for snacks and thali. Avoid evenings<br />
+        <br />
+    </li>
+    <li> Gopika - Next door to New Krishna Bhavan, this hotel                             serves good north Indian food<br />
+        <br />
+    </li>
+    <li> Viking - Located at 8th Main, 16th Cross, Mallleswaram<br />
+        <br />
+    </li>
+    <li> Basil - Located at Sampige Road, Malleswaram<br />
+        <br />
+    </li>
+    <li> Kamath Yatri Nivas (Gandhinagar)<br />
+        <br />
+    </li>
+    <li> Sukh Sagar (Majestic)<br />
+        <br />
+    </li>
+    <li> Shanti Sagar (Bhashyam circle)<br />
+        <br />
+    </li>
+    <li> For wholesome north Indian food, visit Queens (MG                             Road)</li>
+  </ul>
+  <p>Enjoy Chinese food at Big Chef (Bhashyam circle), punjabi                           food at Bawarchi (Mattikere), non-vegetarian food at Karavalli                           (Yeshvantpur) and continental food at Casa Picola (Residency                           Road). </p>
+  <p>&nbsp;</p>
+  <p>You may have to wait for half an hour to eat at the famous                           MTR (near Lalbagh), but it may be worth your time.</p>
+</blockquote>
+<p><br />
+    <strong>Security</strong> <a name="security" id="security"></a></p>
+<p>The Security office is located in the Main Gate of the                         Institute. They play an important role in making the Institute                         a safe, secure place.</p>
+<blockquote>
+  <table border="0" cellpadding="5" cellspacing="0">
+    <tbody>
+      <tr valign="top">
+        <td><p>Phone Nos.</p></td>
+        <td>:</td>
+        <td><p>+91-80-22932225</p></td>
+      </tr>
+      <tr valign="top">
+        <td>&nbsp;</td>
+        <td>:</td>
+        <td><p>+91-80-22932841</p></td>
+      </tr>
+      <tr valign="top">
+        <td>&nbsp;</td>
+        <td>:</td>
+        <td>+91-80-22932400</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+<p>&nbsp;</p>
+<p align="left"><strong>IISc                         Telephone Directory<a name="teldir" id="teldir"></a></strong></p>
+<p align="left"><a href="http://www.iisc.ernet.in/quicklinks/tel_dir/" target="_blank"> Click here</a> to view the directory</p>
+<p>&nbsp;</p>
+<p align="justify">&nbsp;</p>
+            </td></tr>
+              </table></td>
+  </tr>
+</table>
+<br />
+<table width="880" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" background="images/div-horz-gray.jpg"><img src="images/spacer.gif" width="10" height="25" align="absmiddle" /><a href="index-2.html">Home</a> | <a href="contact.html">Contact</a> | <a href="http://www.iisc.ernet.in/" target="_blank">About IISc</a></td>
+    <td align="right" valign="top" background="images/div-horz-gray.jpg">&nbsp;</td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from math.iisc.ac.in/~nmi/visinfo-handbook.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Jan 2017 05:32:25 GMT -->
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+	
+<!-- Mirrored from math.iisc.ac.in/~gadgil/presentations/limits-of-reason.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Jan 2017 05:55:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8">
+
+		<title>Limits of Reason</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>The Limits of Reason</h1>
+
+					<h4>Uncomputabiliblity and Unprovability</h4>
+
+				</section>
+
+				<section>
+
+					<h3>Berry's paradox</h3>
+					<p class="fragment" data-fragment-index="1">
+						<q>The smallest number that cannot be <span class="fragment highlight-blue" data-fragment-index="4">described</span> in less than a 1000 words.</q>
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Let us call this <strong>Berry's number</strong>.
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						<strong> Paradox: </strong> The above is a description of Berry's number in less than 1000 words.
+					</p>
+
+				</section>
+
+				<section>
+					<h3> Describe describe</h3>
+					<p class="fragment">
+						For Berry's paradox to give a contradiction, we need
+					</p>
+					<UL class = "fragment">
+						<li class="fragment highlight-current-blue"> A notion of descriptions, say as terms of a fixed type.</li>
+						<li class="fragment highlight-current-blue"> To know which descriptions are well-defined (e.g. terminate), so correspond to terms.</li>
+						<li class="fragment highlight-current-blue"> To know which term is represented by a given description.</li>
+						<li class="fragment highlight-current-blue"> Berry's statement must give a well-defined description.</li>
+					</UL>
+					<h4 class="fragment"> One of these must fail! </h4>
+				</section>
+
+				<section>
+					<h3> Strict descriptions</h3>
+					<Ul>
+					<li class="fragment"> Suppose we have a strict language,
+						where all descriptions are total and terminating.</li>
+					<li class="fragment"> Suppose also that our language is rich enough so that descriptions are terms,
+						as is the function evaluating a (valid) description.
+					<li class="fragment"> For example, we can consider only primitive recursive definitions,
+						while allowing dependent functions and inductive types.</li>
+					<li class="fragment">	In this case Berry's statement will not be considered to be a valid description.</li>
+					</UL>
+				</section>
+
+				<section>
+					<h3> General descriptions</h3>
+					<UL>
+					<li class="fragment"> Suppose we allow all recursive descriptions, as well as dependent types etc.</li>
+					<li class="fragment"> In general descriptions may not terminate.</li>
+					<li class="fragment"> <em>Can be described</em> should be interpreted as having a
+						<em> terminating</em> description.</li>
+					<li class="fragment">	Berry's statement will be a valid description,
+						if we can determine which descriptions terminate.</li>
+					<li class="fragment"> Thus the Boolean function saying which descriptions terminate
+						is not computable.</li>
+					</UL>
+				</section>
+
+				<section>
+					<h3> Refining using proofs</h3>
+					<UL>
+						<li class="fragment"> We consider below only descriptions of numbers.</li>
+						<li class="fragment"> We can exclude descriptions which we can prove do not terminate.</li>
+						<li class="fragment"> With propositions as types,
+							we can enumerate proofs and filter out descriptions that we can prove do not terminate.</li>
+						</Ul>
+					</section>
+					<section>
+						<h3> Unprovability</h3>
+						<UL>
+						<li class="fragment"> By a diagonal ordering, for <em>short</em> descriptions we can
+							<UL>
+								<li class="fragment highlight-current-blue"> enumerate terminating short descriptions of numbers,
+									and give the numbers to which they correspond.
+								</li>
+								<li class="fragment highlight-current-blue"> enumerate descriptions that we can prove do not terminate.
+								</Ul>
+							</li>
+						<li class="fragment"> We can thus describe Berry's number unless
+							<strong class="fragment"> there is some description which does not terminate,
+							but we cannot prove that it does not terminate.</strong>
+						</li>
+					</UL>
+					</section>
+
+					<section>
+						<h3> Chaitin's theorem</h3>
+						<UL>
+							<li class="fragment"> For $M$ large enough, we cannot prove a statement $P_M(n)$ saying
+								<em> we cannot describe $n$ in less than $M$ tokens.</em></li>
+							<li class="fragment"> Otherwise we list proofs till we find one of the form $P_M(n)$.</li>
+							<li class="fragment"> For the first such proof of $P_M(n)$ we return $n$.</li>
+							<li class="fragment"> This gives a description of length bounded by $C + log(M)$;
+								<span class="fragment"> the description has $M$ as part of it but not $n$.</span></li>
+							<li class="fragment"> By a counting argument, some statement of the form $P_M(n)$ must be true, in fact at least one of a finite collection of such statements must be true.</li>
+						</UL>
+					</section>
+
+
+					<section>
+						<h3> Consistency and Contradictions</h3>
+						<UL>
+							<li class="fragment"> We consider <em> axiom systems</em> given by a dependently typed language and a finite collection of postulates.</li>
+							<li class="fragment"> Such a system is <em> inconsistent</em> if there is a term of type $\mathbb{0}$.</li>
+							<li class="fragment"> In an inconsistent theorem, we can prove everything.</li>
+							<li class="fragment"> Chaitin's theorem actually says that if we can prove a statement $P_M(n)$ (with $M$ large) then our system is inconsistent.</li>
+							<li class="fragment"> Note that if a system is inconsistent, we can prove $P_M(n)$.</li>
+						</UL>
+					</section>
+
+					<section>
+						<h3> Surprise Examination Paradox</h3>
+						<UL>
+							<li class="fragment"> We have a finite collection of statements such that:
+								<UL>
+									<li class="fragment highlight-current-blue"> At least one of the statements is true.</li>
+									<li class="fragment highlight-current-blue"> Any false statement can be proved to be false.</li>
+								</UL>
+							</li>
+							<li class="fragment"> Suppose only one of the statements was true.</li>
+							<li class="fragment"> Then, Chaitin's theorem, together with proving false statements are false gives a proof that this statement is true.</li>
+							<li class="fragment"> Thus, if we could prove our axiom system to be consistent, we can <em>prove</em> that there are at least two true statements.</li>
+						</UL>
+					</section>
+
+					<section>
+						<h3> Godel's second incompleteness theorem</h3>
+						<UL>
+							<li class="fragment"> Suppose we had a consistent axiom system.</li>
+							<li class="fragment"> If we can prove this is consistent, then we can prove that at least two of the statements $P_M(n)$ are true.</li>
+							<li class="fragment"> If exactly two were true, then using this and proving the false statements to be false, we can prove that these statements are true.</li>
+							<li class="fragment"> Iterating this argument gives an impossible situation.</li>
+							<li class="fragment"> We conclude that if a given axiom system is consistent, we cannot prove that it is consistent.
+						</UL>
+
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+
+				math: {
+					mathjax: '../MathJax/MathJax.js',
+					// mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full' // See http://docs.mathjax.org/en/latest/config-files.html
+				},
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true}
+				]
+			});
+
+//			Reveal.addEventListener( 'slidechanged', function( event ) {
+//				MathJax.Hub.Rerender();
+//			} );
+
+		</script>
+
+	</body>
+
+<!-- Mirrored from math.iisc.ac.in/~gadgil/presentations/limits-of-reason.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Jan 2017 05:56:08 GMT -->
+</html>

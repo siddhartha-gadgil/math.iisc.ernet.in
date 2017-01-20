@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<!-- Mirrored from math.iisc.ac.in/~gadgil/AlgebraicTopology/blog/2016/08/05/assignment-homotopy-as-path-of-paths/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Jan 2017 05:40:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <title>Assignment 1: Homotopy as Path of Paths - Algebraic Topology</title>
+  <meta name="author" content="Siddhartha Gadgil">
+
+  
+  <meta name="description" content="For sets $X$ and $Y$, let $X\to Y$ denote the set of functions from $X$ to $Y$.
+It is clear that, for a topological space $X$ there is a bijection &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="index.html">
+  <link href="../../../../../favicon.png" rel="icon">
+  <link href="../../../../../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="../../../../../../../atom.html" rel="alternate" title="Algebraic Topology" type="application/atom+xml">
+  <script src="../../../../../javascripts/modernizr-2.0.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="../../../../../javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="../../../../../index.html">Algebraic Topology</a></h1>
+  
+    <h2>Department of Mathematics, Indian Institute of Science, Aug-Dec 2016.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="../../../../../../../atom.html" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:math.iisc.ac.in/~gadgil/AlgebraicTopology" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+	<li><a href="../../../../../home/index.html">Home</a></li>
+  <li><a href="../../../../../index.html">Blog</a></li>
+  <li><a href="../../../../archives/index.html">Archives</a></li>
+	<li><a href="../../../../categories/assignments/index.html">Assignments</a></li>
+	<li><a href="../../../../categories/announcements/index.html">Announcements</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Assignment 1: Homotopy as Path of Paths</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-08-05T10:39:38+05:30" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>For sets $X$ and $Y$, let $X\to Y$ denote the set of functions from $X$ to $Y$.
+It is clear that, for a topological space $X$ there is a bijection between $([0,1]\times [0,1]) \to X$ and $[0,1] \to ([0,1] \to X)$
+given by associating to $H: [0,1]\times [0,1] \to X$ the function $s\mapsto (t\mapsto H(s,t))$.
+In this assignment, we shall see that, if we use the appropriate topology on paths in a space $X$, i.e.,
+maps from $[0,1]$ to $X$, this is in fact a bijection between homotopies and paths of paths.</p>
+
+<p>Given topological spaces $X$ and $Y$, the <em>compact open</em> topology on the set $C(X, Y)$ of continuous functions from $X$ to $Y$
+is the topology with sub-base constructed as follows. For $K\subset X$ compact and $U\subset Y$ open, we define $V(K, U)$
+to be the set of continuous functions $f: X\to Y$ with $f(K)\subset U$. The sets $V(K, U)$ form a sub-base for the compact-open topology.</p>
+
+<p>Assume henceforth that, for spaces $X$ and $Y$, $C(X, Y)$ has the compact-open topology.</p>
+
+<ol>
+  <li>
+    <p>Assume that $X$ is a compact topological space and $Y$ is a metric space. Let $f_n: X\to Y$ be a sequence of maps and $f: X\to Y$ be a map.
+Show that the sequence $f_n$ converges to $f$ in the compact open topology if and only if it converges uniformly to $f$.</p>
+  </li>
+  <li>
+    <p>Let $X$ be a topological space. Show that a function $H: [0,1]\times [0,1] \to X$ is continuous if and only if</p>
+    <ul>
+      <li>for each $s\in [0,1]$, $f_s: t\mapsto H(s, t)$ is continuous.</li>
+      <li>the function $s\mapsto f_s$ is a continuous function from $[0,1]$ to $C([0,1], X)$ with the compact open topology.</li>
+    </ul>
+  </li>
+</ol>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Siddhartha Gadgil</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-08-05T10:39:38+05:30" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='../../../../categories/assignments/index.html'>assignments</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://math.iisc.ac.in/~gadgil/AlgebraicTopology/blog/2016/08/05/assignment-homotopy-as-path-of-paths/" data-via="" data-counturl="http://math.iisc.ac.in/~gadgil/AlgebraicTopology/blog/2016/08/05/assignment-homotopy-as-path-of-paths/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="../../04/fundamental-groupoid/index.html" title="Previous Post: Fundamental groupoid">&laquo; Fundamental groupoid</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="index.html">Assignment 1: Homotopy as Path of Paths</a>
+      </li>
+    
+      <li class="post">
+        <a href="../../04/fundamental-groupoid/index.html">Fundamental Groupoid</a>
+      </li>
+    
+      <li class="post">
+        <a href="../../../07/21/topology-problems/index.html">Topological Problems</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Siddhartha Gadgil -
+  <span class="credit">Powered by <a href="http://octopress.org/">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+
+<!-- Mirrored from math.iisc.ac.in/~gadgil/AlgebraicTopology/blog/2016/08/05/assignment-homotopy-as-path-of-paths/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Jan 2017 05:40:27 GMT -->
+</html>
