@@ -1,3 +1,7 @@
 *.pdf
 *.tmp
 _*/
+_site
+.sass-cache
+.jekyll-metadata
+
