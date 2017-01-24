@@ -1,10 +1,12 @@
 import ammonite.ops._
 
-def menuTail(sts: Vector[String]) = sts.dropWhile((s) => !s.contains("ln-conus")).dropWhile((s) => !s.contains("/table")).tail
+import scala.util.Try
 
-def simpleTail(sts: Vector[String]) = sts.dropWhile((s) => !s.contains("<body>")).tail
+def menuTail(sts: Vector[String]) = sts.dropWhile((s) => !s.contains("lnk-conus")).dropWhile((s) => !s.contains("/table")).tail
 
-def hasMenu(sts: Vector[String]) = sts.exists(_.contains("ln-conus"))
+def simpleTail(sts: Vector[String]) = sts.dropWhile((s) => !s.contains("<body")).tail
+
+def hasMenu(sts: Vector[String]) = sts.exists(_.contains("lnk-conus"))
 
 def beheaded(sts: Vector[String]) =
   if (hasMenu(sts)) "<center>" +: menuTail(sts) else simpleTail(sts)
@@ -15,5 +17,14 @@ def rewrite(file: Path) = {
   outlines.foreach((l) => write.append(file, s"$l\n"))
 }
 
+def shouldWrite(f: Path) = Try(!read.lines(f).head.startsWith("---")).getOrElse(false)
+
+def recLS(base: Path) = {
+  val first = ls(base).filter((d) => !d.name.startsWith("_"))
+  first ++ (first.flatMap{
+    (d) => if (d.isDir) ls.rec(d) else Vector(d)
+  })
+}
+
 def beheadAll(base: Path) =
-  ls.rec(base).filter(_.ext == "html").filter((f) => !read.lines(f).head.startsWith("---")).foreach(rewrite)
+  recLS(base).filter(_.ext == "html").filter(shouldWrite).foreach((f) => Try(rewrite(f)))
