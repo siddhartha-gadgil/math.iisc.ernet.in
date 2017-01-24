@@ -6,25 +6,15 @@ title: publications - Dept of Mathematics, IISc
 
 
 
-<h1> Publications of the Department of Mathematics </h1>
-<div class="row">
-  <div class="dropdown col-md-1">
-    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Year
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dLabel">
-      {% assign years = site.data.pubs | group_by: "year" %}
-  {% for y in years %}
-  <li> <a href="#{{y.name}}"> {{y.name}} </a> </li>
-  {% endfor %}
-    </ul>
-  </div>
+<h2> Publications (by year) </h2>
 
-<div class="col-md-10">
+<div class="row">
+  <div class="col-md-offset-1 col-md-10">
+
 {% assign years = site.data.pubs | group_by: "year" %}
 {% for y in years %}
-<h2 id ="{{y.name}}">{{y.name}}</h2>
+<h4 id ="{{y.name}}">{{y.name}}</h4>
+
 
 <ol>
 {% for paper in y.items %}
@@ -34,10 +24,7 @@ title: publications - Dept of Mathematics, IISc
 {% endfor %}
 </ol>
 
-
-
 {% endfor %}
-
 </div>
 
 </div>

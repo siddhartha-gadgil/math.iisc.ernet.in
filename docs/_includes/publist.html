@@ -1,0 +1,12 @@
+<li class="dropdown col-md-1">
+  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Year
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    {% assign years = site.data.pubs | group_by: "year" %}
+{% for y in years %}
+<li> <a href="#{{y.name}}"> {{y.name}} </a> </li>
+{% endfor %}
+  </ul>
+</li>
