@@ -31,8 +31,8 @@ def beheadAll(base: Path) =
 
 def choptail(f: Path) =
   {
-    val head = read.lines(f).takeWhile((l) => !l.contains ("\\body"))
-    write.over(f, "")
+    val head = read.lines(f).takeWhile((l) => !l.contains ("/body"))
+    rm(f)
     head.foreach((l) => write.append(f, l + "\n"))
   }
 
