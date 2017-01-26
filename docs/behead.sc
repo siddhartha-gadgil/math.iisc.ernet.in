@@ -28,3 +28,13 @@ def recLS(base: Path) = {
 
 def beheadAll(base: Path) =
   recLS(base).filter(_.ext == "html").filter(shouldWrite).foreach((f) => Try(rewrite(f)))
+
+def choptail(f: Path) =
+  {
+    val head = read.lines(f).takeWhile((l) => !l.contains ("\\body"))
+    write.over(f, "")
+    head.foreach((l) => write.append(f, l + "\n"))
+  }
+
+def chopAll(base : Path) =
+  recLS(base).filter(_.ext == "html").foreach((f) => Try(choptail(f)))
