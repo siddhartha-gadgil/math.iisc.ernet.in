@@ -9,7 +9,7 @@
                 pure and applied mathematics. The Department has a vibrant research
                 atmosphere backed up by excellent infrastructural facilities.
                 We have a modern computer laboratory and a good Departmental library.
-                <a href="people-fac.html">Members of our faculty</a> have won many
+                <a href="faculty.html">Members of our faculty</a> have won many
                 honours in recognition of their academic achievements. </div>
               <div>The Department admits students under two programmes - the <a href="degprog-phd.html">Ph.D.
                 programme</a> and the <a href="degprog-intphd.html">integrated
@@ -22,19 +22,19 @@
                 Mathematics Initiative</a>. It takes active part in the Indo-French <a href="http://disc.iisc.ernet.in/ficus/ficus.html" target="_blank">Cyber
                 University project</a> with Toulouse University Network. The Department
                 is also deeply involved in the Kishore Vaigyanik Protsahan Yojana
-                and the <a href="http://vyasa.math.iisc.ernet.in/" target="_blank">Mathematical
-                Olympiad</a> programme.</div>
+                and the Mathematical
+                Olympiad programme.</div>
   </div>
 
   <div class="col-md-3">
-    <h3> <a href="seminars-all">Seminars</a></h3>
+    <h3> <a href="seminars-all.html">Seminars</a></h3>
     {% assign sorted = (site.seminars | sort: 'date') | reverse %}
 
 <ul>
 
 {% for sem in sorted limit: 3 %}
 <li>
- <div><strong> Title: </strong> <a href="{{ site.baseurl}}{{ sem.url }}">{{ sem.title }}</a> </div>
+ <div><strong> Title: </strong> <a href="{{ site.baseurl}}{{ sem.url }}.html">{{ sem.title }}</a> </div>
 <div>  <strong>Speaker: </strong> {{sem.speaker}} </div>
 <div>  <strong>Date: </strong>{{ sem.date | date_to_long_string }} </div>
 <div class="">
