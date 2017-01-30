@@ -32,8 +32,12 @@ future: true
 
 collections:
   seminars:
+      output: true
+      permalink: /seminars/:title
+
+  all-courses:
     output: true
-    permalink: /seminars/:title
+    permalink: /all-courses/:title
 
 defaults:
   - scope:

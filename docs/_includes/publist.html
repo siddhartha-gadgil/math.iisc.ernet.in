@@ -17,7 +17,7 @@
           <ul class="dropdown-menu">
             {% assign years = site.data.pubs | group_by: "year" %}
         {% for y in years %}
-        <li> <a href="{{ site.baseurl }}/pubs.html/#{{y.name}}"> {{y.name}} </a> </li>
+        <li> <a href="{{ site.baseurl }}/pubs.html#{{y.name}}"> {{y.name}} </a> </li>
         {% endfor %}
           </ul>
         </li>
