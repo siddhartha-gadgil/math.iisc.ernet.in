@@ -44,7 +44,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-      title: "Department of Mathematics, IISc"
+      # title: "Department of Mathematics, IISc"
 
   - scope:
       path: ""

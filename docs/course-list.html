@@ -1,39 +1,11 @@
 ---
 ---
 
-{% assign even = site.data.courses.jan2017 %}
+{% assign semester = site.data.courses.jan2017 %}
 <h3 class="text-center">Courses for the semester January-April 2017</h3>
 
 <h4> Core for Integrated Ph.D. first year: </h4>
 
-<div class="col-md-8 col-offset-md-1">
-<table class="table table-bordered">
-  <tr>
-    <strong>
-    <td>Course No</td> <td>Credits</td><td>Course title</td> <td>Instructor</td>
-  </strong>
-  </tr>
-  {% for course in even.core1 %}
-  <td>{{ course.code }}</td>
-  <td>
-    {% if course.credits %}
-    {{ course.credits }}
-    {% else %}
-    3:0
-    {% endif %}
+{% assign list = semester.core1 %}
 
-  </td>
-  <td>
-    {% capture lnk %}{{ site.baseurl }}/all-courses/{{  course.code  | downcase | replace: ' ', '' }}.html{% endcapture  %}
-
-    {% if course.webpage %}
-    {% assign lnk = course.webpage %}
-    {% endif %}
-
-    <a href="{{ lnk }}"> {{ course.name }} </a> </td>
-  <td> {{ course.instructor}}</td>
-</tr>
-{% endfor %}
-
-</table>
-</div>
+{% include course-table.html %}
